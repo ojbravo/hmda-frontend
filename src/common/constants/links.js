@@ -36,6 +36,7 @@ export const defaultLinks = [
       { name: 'FAQs', href: '/documentation/' },
       { name: 'Developer APIs', href: 'https://cfpb.github.io/hmda-platform/#hmda-api-documentation' },
       { name: 'Updates', href: '/updates-notes' },
+      { name: 'Homepage Beta', href: '/uswds-demo' },
     ]
   }
 ]

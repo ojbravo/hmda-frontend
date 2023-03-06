@@ -13,6 +13,8 @@ import './app.css'
 
 const Homepage = makeAsyncComponent(() => import('./homepage'),
   'HMDA - Home Mortgage Disclosure Act', 'Explore filing, data publication, and documentation resources for the Home Mortgage Disclosure Act')
+const Homepage2 = makeAsyncComponent(() => import('./homepage/index2.js'),
+  'HMDA - Home Mortgage Disclosure Act', 'Explore filing, data publication, and documentation resources for the Home Mortgage Disclosure Act')
 const DataBrowser = makeAsyncComponent(() => import('./data-browser'),
   'HMDA Data Browser', 'Filter, analyze, and download HMDA datasets and visualize HMDA data through charts, graphs, and maps')
 const Documentation = makeAsyncComponent(() => import('./documentation'),
@@ -57,6 +59,7 @@ const App = () => {
       {showBetaBanner && <Beta />}
       <Switch>
         <Route exact path='/' component={Homepage} />
+        <Route exact path='/uswds-demo' component={Homepage2} />
         <Route path='/data-browser' component={DataBrowser} />
         <Route path='/documentation' component={Documentation} />
         <Route path='/tools' component={Tools} />
