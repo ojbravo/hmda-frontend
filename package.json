@@ -7,7 +7,7 @@
     "node": ">=14.17.x"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "yarn run cypress run",
     "test-large": "CYPRESS_YEARS=2020 yarn run cypress run --spec cypress/integration/load/LargeFiler.spec.js",
@@ -26,8 +26,9 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.1",
     "@tanstack/react-table": "^8.3.0",
-    "@uswds/uswds": "^3.3.0",
+    "@uswds/uswds": "^3.4.1",
     "ansi-html": "0.0.8",
+    "core-js-pure": "^3.29.1",
     "csv-parse": "4.15.4",
     "detect-browser": "4.8.0",
     "elliptic": "6.5.4",
